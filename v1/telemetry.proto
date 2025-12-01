@@ -1,5 +1,5 @@
 syntax = "proto3";
-import "proto/station.proto";
+import "proto/v1/station.proto";
 
 package UMetadata.GRPC;
 
