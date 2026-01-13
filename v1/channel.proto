@@ -2,7 +2,7 @@ edition = "2023";
 import "google/protobuf/timestamp.proto";
 
 
-package UMetadata.V1;
+package UMetadataAPI.V1;
 
 // Defines a channel.
 message Channel
