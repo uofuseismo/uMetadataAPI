@@ -1,7 +1,8 @@
 edition = "2023";
-import "proto/v1/station.proto";
 
 package UMetadata.V1;
+
+import "uMetadataAPI/v1/station.proto";
 
 /// A node in a telemetry graph can be a station or a relay.
 message RelayNode
