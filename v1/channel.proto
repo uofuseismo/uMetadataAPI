@@ -1,17 +1,7 @@
-syntax = "proto3";
+edition = "2023";
+import "google/protobuf/timestamp.proto";
 
-package UMetadata.GRPC;
-
-/*
-// The service that returns station information.
-service Service
-{
-    /// Gets the currently running stations in the network.
-    rpc GetAllActiveStations(AllActiveStationsRequest) returns(StationInformationResponse) {}; 
-    /// Gets all stations in the network.
-    rpc GetAllStations(AllStationsRequest) returns(StationInformationResponse) {}; 
-}
-*/
+package UMetadata.V1;
 
 // Defines a channel.
 message Channel
@@ -39,19 +29,12 @@ message Channel
     // The channel's dip in degrees measured positive down from horizontal.
     // This will be in the range of [-90,90] where -90 is positive up.
     double dip = 10;
-    // The UTC time in seconds since the epoch when the channel was opened.
-    int64 start_time = 11;
-    // The UTC time in seconds since the epoch when the channel was closed.
-    int64 end_time = 12;
-    // The UTC time was this channel's information was updated in microseconds since the epoch.
-    int64 last_modified_mus = 13;
+    // The UTC time when the channel was opened.
+    google.protobuf.Timestamp start_time = 11;
+    // The UTC time when the channel was closed.
+    google.protobuf.Timestamp end_time = 12;
+    // The UTC time was this channel's information was updated.
+    google.protobuf.Timestamp last_modified_mus = 13;
 };
 
-/*
-// The station information corresponding to the request.
-message StationInformationResponse
-{
-    // The stations in the network.
-    repeated StationInformation = 1;
-}
-*/
+
