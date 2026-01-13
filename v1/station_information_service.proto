@@ -1,6 +1,6 @@
 edition = "2023";
 
-package UMetadata.V1;
+package UMetadataAPI.V1;
 
 import "uMetdataAPI/v1/all_active_stations_request.proto";
 import "uMetadatAPI/v1/active_station_request.proto";
