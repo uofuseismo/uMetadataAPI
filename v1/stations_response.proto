@@ -1,8 +1,8 @@
 edition = "2023";
 
-package UMetadata.V1;
+package UMetadataAPI.V1;
 
-import "proto/v1/station.proto";
+import "uMetadataAPI/v1/station.proto";
 
 /*!
  * The station information corresponding to the station information request.
