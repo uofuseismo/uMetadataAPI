@@ -1,6 +1,6 @@
 edition = "2023";
 
-package UMetadata.V1;
+package UMetadataAPI.V1;
 
 /*!
  * Requests information for an active (currently running) station.
