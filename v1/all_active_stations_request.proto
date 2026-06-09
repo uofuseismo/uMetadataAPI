@@ -7,4 +7,5 @@ package UMetadataAPI.V1;
  */
 message AllActiveStationsRequest
 {
+    string identifier = 1 [default = ""]; /// A request identifier.
 }
